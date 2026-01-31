@@ -1,0 +1,21 @@
+spring:
+  # Test profile uses in-memory DB so tests can run without Docker/Postgres
+  datasource:
+    url: jdbc:h2:mem:notifications_test_db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+
+  # Disable external dependencies during unit tests
+  rabbitmq:
+    host: localhost
+    port: 5672
+
+eureka:
+  client:
+    enabled: false

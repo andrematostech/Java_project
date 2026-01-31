@@ -1,0 +1,125 @@
+# =========================================================
+# Members Service - consolidated configuration (single file)
+# Profiles supported: docker, k8s
+# =========================================================
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: members-service
+
+  datasource:
+    # Local/dev
+    url: jdbc:postgresql://localhost:5432/members_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
+
+rabbitmq:
+  exchange:
+    name: members-exchange
+  queue:
+    member-registered: member.registered.queue
+    member-activated: member.activated.queue
+    member-profile-updated: member.profile.updated.queue
+    member-suspended: member.suspended.queue
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+
+---
+# =========================
+# docker profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+  datasource:
+    # Docker Compose: host must match the Postgres service name.
+    url: jdbc:postgresql://members_db:5432/members_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    hostname: members-service
+
+---
+# =========================
+# k8s profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: k8s
+
+  datasource:
+    # This host MUST match your K8s Service name for Postgres.
+    url: jdbc:postgresql://members-db:5432/members_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    hikari:
+      initialization-fail-timeout: 0
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    prefer-ip-address: true

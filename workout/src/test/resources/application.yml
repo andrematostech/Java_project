@@ -1,0 +1,40 @@
+# C:\Users\André Matos\Desktop\MEI_2025\MTSDS\gymhub-clean\gymhub\workout\src\test\resources\application.yml
+# Test configuration:
+# - Use in-memory H2 so tests don't require Postgres
+# - Disable Rabbit auto-config so tests don't require RabbitMQ
+# - Disable Eureka/Discovery so tests don't require Eureka
+
+spring:
+  application:
+    name: workout
+
+  datasource:
+    url: jdbc:h2:mem:workout_test_db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    show-sql: false
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+
+  cloud:
+    discovery:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    org.hibernate.SQL: warn
+    org.springframework: warn

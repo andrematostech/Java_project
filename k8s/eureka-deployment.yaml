@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eureka-server
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eureka-server
+  template:
+    metadata:
+      labels:
+        app: eureka-server
+    spec:
+      containers:
+      - name: eureka-server
+        image: gymhub/eureka-server:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8761
+        env:
+        - name: JAVA_TOOL_OPTIONS
+          value: -Xms128m -Xmx256m -XX:MaxRAMPercentage=75.0 -XX:InitialRAMPercentage=50.0
+        - name: SPRING_PROFILES_ACTIVE
+          value: k8s
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8761
+          initialDelaySeconds: 20
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 12
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8761
+          initialDelaySeconds: 60
+          periodSeconds: 20
+          timeoutSeconds: 5
+          failureThreshold: 6
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka-server
+  namespace: gymhub
+spec:
+  selector:
+    app: eureka-server
+  ports:
+  - port: 8761
+    targetPort: 8761
+    protocol: TCP
+  type: ClusterIP

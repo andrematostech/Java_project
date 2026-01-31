@@ -1,0 +1,126 @@
+# =========================================================
+# Trainers Service - consolidated configuration (single file)
+# Profiles supported: docker, k8s
+# =========================================================
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: trainers-service
+
+  datasource:
+    # Local/dev (DB exposed by docker-compose port mapping, if used)
+    url: jdbc:postgresql://localhost:5433/trainers_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres # normalized DB user
+    password: postgres # normalized DB password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
+
+# RabbitMQ names used by the service code
+rabbitmq:
+  exchange:
+    name: trainers-exchange
+  queue:
+    trainer-created: trainer.created.queue
+    trainer-updated: trainer.updated.queue
+    trainer-deleted: trainer.deleted.queue
+
+# Eureka (default/local)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+
+# Actuator health probes (Docker + Kubernetes)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+
+---
+# =========================
+# docker profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+  datasource:
+    url: jdbc:postgresql://trainers_db:5432/trainers_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres # normalized DB user
+    password: postgres # normalized DB password
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    hostname: trainers-service
+
+---
+# =========================
+# k8s profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: k8s
+
+  datasource:
+    # Match k8s service name for the DB
+    url: jdbc:postgresql://trainers-db:5432/trainers_db
+    driver-class-name: org.postgresql.Driver
+    username: postgres # normalized DB user
+    password: postgres # normalized DB password
+    hikari:
+      initialization-fail-timeout: 0
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    prefer-ip-address: true

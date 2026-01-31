@@ -1,0 +1,800 @@
+22:38:15.533 [INFO ] o.e.t.c.TrainersControllerTest - Starting TrainersControllerTest using Java 17.0.13 with PID 23240 (started by Utilizador in C:\DEV\gymhub\trainers)
+22:38:15.538 [DEBUG] o.e.t.c.TrainersControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:38:15.539 [INFO ] o.e.t.c.TrainersControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:38:19.110 [INFO ] o.e.t.c.TrainersControllerTest - Started TrainersControllerTest in 4.697 seconds (process running for 6.865)
+22:38:19.881 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.134 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.181 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.337 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.376 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.405 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.432 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.449 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.464 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.931 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.955 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.962 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.975 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.984 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:20.996 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.005 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.012 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.023 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.066 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.074 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.081 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.091 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:21.759 [INFO ] o.e.t.TrainersApplicationTests - Starting TrainersApplicationTests using Java 17.0.13 with PID 23240 (started by Utilizador in C:\DEV\gymhub\trainers)
+22:38:21.759 [DEBUG] o.e.t.TrainersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:38:21.760 [INFO ] o.e.t.TrainersApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:38:25.246 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:38:25.573 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:38:25.582 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:38:25.621 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:38:27.083 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:38:29.051 [INFO ] o.e.t.TrainersApplicationTests - Started TrainersApplicationTests in 7.888 seconds (process running for 16.805)
+22:38:29.130 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:38:29.130 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:38:29.140 [INFO ] o.e.t.TrainersApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:38:29.204 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:38:29.206 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:35:52.377 [INFO ] o.e.t.c.TrainersControllerTest - Starting TrainersControllerTest using Java 17.0.13 with PID 17760 (started by Utilizador in C:\DEV\gymhub\trainers)
+21:35:52.381 [DEBUG] o.e.t.c.TrainersControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:35:52.382 [INFO ] o.e.t.c.TrainersControllerTest - No active profile set, falling back to 1 default profile: "default"
+21:35:59.441 [INFO ] o.e.t.c.TrainersControllerTest - Started TrainersControllerTest in 9.672 seconds (process running for 12.288)
+21:36:01.109 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.265 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.288 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.386 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.424 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.438 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.462 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.481 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.494 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.895 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.920 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.931 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.955 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:01.967 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.000 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.028 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.052 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.091 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.104 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.120 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.129 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:02.149 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:03.921 [INFO ] o.e.t.TrainersApplicationTests - Starting TrainersApplicationTests using Java 17.0.13 with PID 17760 (started by Utilizador in C:\DEV\gymhub\trainers)
+21:36:03.921 [DEBUG] o.e.t.TrainersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:36:03.921 [INFO ] o.e.t.TrainersApplicationTests - No active profile set, falling back to 1 default profile: "default"
+21:36:08.340 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:36:08.784 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+21:36:08.791 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:36:08.867 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21:36:11.943 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:36:14.831 [INFO ] o.e.t.TrainersApplicationTests - Started TrainersApplicationTests in 12.606 seconds (process running for 27.677)
+21:36:14.960 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+21:36:14.960 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+21:36:14.978 [INFO ] o.e.t.TrainersApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:15.089 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:36:15.092 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:22:45.073 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 3336 (started by Utilizador in C:\DEV\gymhub\trainers)
+00:22:45.075 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+00:22:45.075 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+00:22:49.426 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:22:49.724 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+00:22:49.727 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:22:49.749 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+00:22:51.375 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:22:53.425 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 10.41 seconds (process running for 12.344)
+00:22:53.520 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+00:22:53.521 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+00:22:54.277 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:22:54.277 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:22:54.277 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:22:54.543 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:22:54.546 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:22:54.547 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+00:22:54.547 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:22:54.547 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+00:22:54.612 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+00:22:54.613 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+00:22:54.644 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:22:54.661 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+00:22:54.662 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+00:22:54.667 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+00:22:54.667 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+00:22:54.714 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:22:54.714 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:22:54.714 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:22:54.727 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:22:54.727 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:22:54.727 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+00:22:54.727 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:22:54.727 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:22:54.760 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:22:54.760 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+00:22:54.765 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:22:54.766 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:22:54.770 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:22:54.770 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:22:54.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:22:54.797 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:22:54.797 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+00:22:54.800 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:22:54.800 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+00:22:54.800 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+00:22:54.801 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+00:22:54.815 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:22:54.815 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:22:54.815 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: d1241283-3337-44a3-8568-44f0400c0fd5
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: d1241283-3337-44a3-8568-44f0400c0fd5
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+00:22:54.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:22:54.842 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:22:54.843 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+00:22:54.971 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:22:54.976 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:24:16.188 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 20008 (started by Utilizador in C:\DEV\gymhub\trainers)
+00:24:16.193 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+00:24:16.194 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+00:24:20.428 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:24:20.747 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+00:24:20.752 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:24:20.792 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+00:24:22.609 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:24:24.758 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 10.469 seconds (process running for 12.617)
+00:24:24.827 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+00:24:24.827 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+00:24:25.513 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:24:25.514 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:24:25.515 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:24:25.860 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:24:25.864 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:24:25.865 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+00:24:25.865 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:24:25.865 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+00:24:25.932 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+00:24:25.932 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+00:24:25.970 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:24:25.995 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+00:24:25.997 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+00:24:26.002 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+00:24:26.003 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+00:24:26.037 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:24:26.038 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:24:26.038 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:24:26.054 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:24:26.055 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:24:26.055 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+00:24:26.055 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:24:26.055 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:24:26.089 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:24:26.090 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+00:24:26.096 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:24:26.096 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:24:26.100 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:24:26.101 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+00:24:26.110 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:24:26.111 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:24:26.111 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:24:26.116 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:24:26.117 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:24:26.117 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+00:24:26.117 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:24:26.117 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:24:26.124 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:24:26.124 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+00:24:26.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:24:26.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+00:24:26.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+00:24:26.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+00:24:26.138 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:24:26.138 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:24:26.138 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:24:26.144 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:24:26.145 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:24:26.145 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+00:24:26.146 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:24:26.146 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+00:24:26.147 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+00:24:26.147 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+00:24:26.147 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+00:24:26.147 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+00:24:26.149 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: fd8dd1b7-4b48-4b57-8e92-8857e607721e
+00:24:26.150 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:24:26.151 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: fd8dd1b7-4b48-4b57-8e92-8857e607721e
+00:24:26.151 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+00:24:26.151 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+00:24:26.151 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:24:26.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:24:26.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+00:24:26.254 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:24:26.259 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+00:26:47.898 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 17756 (started by Utilizador in C:\DEV\gymhub\trainers)
+00:26:47.901 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+00:26:47.902 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+00:26:53.263 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:26:53.709 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+00:26:53.709 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:26:53.747 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+00:26:55.458 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:26:58.631 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 12.581 seconds (process running for 14.448)
+00:26:58.772 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+00:26:58.773 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+00:26:59.640 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:26:59.640 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:26:59.640 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:26:59.894 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:26:59.912 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:26:59.912 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+00:26:59.912 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:26:59.912 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+00:26:59.964 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+00:26:59.964 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+00:27:00.014 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:27:00.019 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+00:27:00.019 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+00:27:00.026 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+00:27:00.026 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+00:27:00.061 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:27:00.062 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:27:00.062 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:27:00.076 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:27:00.076 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:27:00.077 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+00:27:00.077 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:27:00.077 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:27:00.091 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:27:00.091 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+00:27:00.091 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:27:00.091 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:27:00.107 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:27:00.107 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+00:27:00.107 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:27:00.123 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:27:00.123 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+00:27:00.127 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+00:27:00.148 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+00:27:00.148 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+00:27:00.148 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+00:27:00.152 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+00:27:00.152 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+00:27:00.152 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+00:27:00.153 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+00:27:00.156 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: 57028965-a3c0-413e-8f3f-2c6711019bad
+00:27:00.156 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+00:27:00.157 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: 57028965-a3c0-413e-8f3f-2c6711019bad
+00:27:00.157 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+00:27:00.157 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+00:27:00.157 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+00:27:00.159 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+00:27:00.161 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+00:27:00.242 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+00:27:00.242 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:07:28.282 [INFO ] o.e.t.c.TrainersControllerTest - Starting TrainersControllerTest using Java 17.0.13 with PID 18356 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:07:28.288 [DEBUG] o.e.t.c.TrainersControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:07:28.289 [INFO ] o.e.t.c.TrainersControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:07:32.407 [INFO ] o.e.t.c.TrainersControllerTest - Started TrainersControllerTest in 6.153 seconds (process running for 8.476)
+22:07:33.129 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.380 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.403 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.489 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.522 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.539 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.617 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.631 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:33.644 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:35.315 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 18356 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:07:35.316 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:07:35.316 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+22:07:38.892 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:07:39.188 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:07:39.193 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:07:39.228 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:07:40.805 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:07:42.846 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 9.1 seconds (process running for 18.913)
+22:07:42.943 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:07:42.944 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:07:42.985 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:07:42.986 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:07:42.987 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:07:43.336 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:07:43.337 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:07:43.338 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+22:07:43.338 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:07:43.338 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+22:07:43.399 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+22:07:43.399 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+22:07:43.456 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:07:43.500 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+22:07:43.510 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+22:07:43.522 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+22:07:43.522 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+22:07:43.536 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:07:43.536 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:07:43.536 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:07:43.555 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:07:43.556 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:07:43.557 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+22:07:43.557 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:07:43.558 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+22:07:43.599 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+22:07:43.600 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+22:07:43.609 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:07:43.610 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+22:07:43.615 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+22:07:43.616 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+22:07:43.628 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:07:43.628 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:07:43.628 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:07:43.632 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:07:43.633 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:07:43.634 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+22:07:43.634 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:07:43.634 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+22:07:43.645 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+22:07:43.646 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+22:07:43.649 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:07:43.649 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+22:07:43.649 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+22:07:43.649 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+22:07:43.663 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:07:43.663 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:07:43.663 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:07:43.668 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:07:43.670 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:07:43.670 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+22:07:43.670 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:07:43.671 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+22:07:43.671 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+22:07:43.672 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+22:07:43.672 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+22:07:43.672 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+22:07:43.676 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: 05fc6f1d-2f90-43f2-9698-a150fe1a1e4e
+22:07:43.677 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:07:43.678 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: 05fc6f1d-2f90-43f2-9698-a150fe1a1e4e
+22:07:43.678 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+22:07:43.678 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+22:07:43.678 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+22:07:43.680 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+22:07:43.680 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+22:07:43.918 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.930 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.935 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.944 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.954 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.961 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.966 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.971 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.978 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.982 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.986 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.991 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:43.996 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:45.617 [INFO ] o.e.t.TrainersApplicationTests - Starting TrainersApplicationTests using Java 17.0.13 with PID 18356 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:07:45.617 [DEBUG] o.e.t.TrainersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:07:45.617 [INFO ] o.e.t.TrainersApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:07:46.458 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:07:46.475 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+22:07:46.475 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:07:46.476 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:07:46.594 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:07:47.218 [INFO ] o.e.t.TrainersApplicationTests - Started TrainersApplicationTests in 3.193 seconds (process running for 23.286)
+22:07:47.227 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:07:47.228 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:07:47.234 [INFO ] o.e.t.TrainersApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:07:47.310 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:07:47.314 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:07:47.323 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:07:47.325 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+22:18:45.958 [INFO ] o.e.t.c.TrainersControllerTest - Starting TrainersControllerTest using Java 17.0.13 with PID 21556 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:18:45.963 [DEBUG] o.e.t.c.TrainersControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:18:45.965 [INFO ] o.e.t.c.TrainersControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:18:49.351 [INFO ] o.e.t.c.TrainersControllerTest - Started TrainersControllerTest in 5.531 seconds (process running for 7.771)
+22:18:50.270 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.432 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.456 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.524 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.553 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.567 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.633 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.644 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:50.654 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:18:52.404 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 21556 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:18:52.404 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:18:52.405 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+22:18:55.949 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:18:56.242 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:18:56.245 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:18:56.281 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:18:57.811 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:18:59.795 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 9.03 seconds (process running for 18.213)
+22:18:59.901 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:18:59.901 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:18:59.946 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:18:59.948 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:18:59.948 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:19:00.204 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:19:00.204 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:19:00.206 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+22:19:00.206 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:19:00.206 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+22:19:00.268 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+22:19:00.268 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+22:19:00.299 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:19:00.304 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+22:19:00.306 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+22:19:00.310 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+22:19:00.311 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+22:19:00.322 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:19:00.323 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:19:00.323 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:19:00.338 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:19:00.339 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:19:00.340 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+22:19:00.340 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:19:00.341 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+22:19:00.377 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+22:19:00.377 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+22:19:00.383 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:19:00.383 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+22:19:00.389 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+22:19:00.390 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+22:19:00.402 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:19:00.403 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:19:00.403 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:19:00.408 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:19:00.409 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:19:00.410 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+22:19:00.410 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:19:00.410 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+22:19:00.421 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+22:19:00.421 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+22:19:00.426 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:19:00.426 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+22:19:00.427 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+22:19:00.427 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+22:19:00.441 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+22:19:00.441 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+22:19:00.441 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+22:19:00.447 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+22:19:00.450 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+22:19:00.451 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+22:19:00.451 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+22:19:00.451 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+22:19:00.451 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+22:19:00.451 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+22:19:00.452 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+22:19:00.452 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+22:19:00.455 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: c1d9e81a-822f-4575-a41a-81e2f51a0ebb
+22:19:00.456 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+22:19:00.457 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: c1d9e81a-822f-4575-a41a-81e2f51a0ebb
+22:19:00.457 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+22:19:00.458 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+22:19:00.458 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+22:19:00.461 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+22:19:00.461 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+22:19:00.694 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.704 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.708 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.713 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.718 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.723 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.727 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.730 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.735 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.744 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.760 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.776 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:00.784 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:02.353 [INFO ] o.e.t.TrainersApplicationTests - Starting TrainersApplicationTests using Java 17.0.13 with PID 21556 (started by Utilizador in c:\DEV\gymhub\trainers)
+22:19:02.354 [DEBUG] o.e.t.TrainersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:19:02.354 [INFO ] o.e.t.TrainersApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:19:03.094 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:19:03.096 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+22:19:03.097 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:19:03.097 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:19:03.226 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:19:03.683 [INFO ] o.e.t.TrainersApplicationTests - Started TrainersApplicationTests in 2.857 seconds (process running for 22.103)
+22:19:03.690 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:19:03.690 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:19:03.696 [INFO ] o.e.t.TrainersApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:19:03.744 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:19:03.746 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:19:03.753 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:19:03.755 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+15:41:38.501 [INFO ] o.e.t.c.TrainersControllerTest - Starting TrainersControllerTest using Java 17.0.13 with PID 3808 (started by Utilizador in C:\DEV\gymhub\trainers)
+15:41:38.507 [DEBUG] o.e.t.c.TrainersControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:41:38.509 [INFO ] o.e.t.c.TrainersControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:41:43.967 [INFO ] o.e.t.c.TrainersControllerTest - Started TrainersControllerTest in 6.906 seconds (process running for 10.405)
+15:41:44.905 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.288 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.314 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.427 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.503 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.517 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.730 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.750 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:45.794 [INFO ] o.e.t.c.TrainersControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:46.947 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Starting TrainersUseCaseIntegrationTest using Java 17.0.13 with PID 3808 (started by Utilizador in C:\DEV\gymhub\trainers)
+15:41:46.948 [DEBUG] o.e.t.i.TrainersUseCaseIntegrationTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:41:46.949 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - The following 1 profile is active: "test"
+15:41:51.590 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:41:52.189 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+15:41:52.194 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:41:52.278 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:41:54.892 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:41:57.934 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - Started TrainersUseCaseIntegrationTest in 12.039 seconds (process running for 24.373)
+15:41:58.038 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+15:41:58.038 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+15:41:58.075 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+15:41:58.076 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+15:41:58.076 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+15:41:58.425 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+15:41:58.426 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+15:41:58.426 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Suporte: Filtrar Treinadores por Especialidade         ?
+15:41:58.427 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+15:41:58.427 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar treinadores com especialidades diferentes
+15:41:58.493 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? 2 treinadores criados
+15:41:58.494 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Filtrar por especialidade CARDIO
+15:41:58.545 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+15:41:58.551 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Encontrado 1 treinador de CARDIO
+15:41:58.553 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade confirmada
+15:41:58.558 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Total: 2 treinadores
+15:41:58.559 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 FILTRO COMPLETO
+15:41:58.572 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+15:41:58.573 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+15:41:58.573 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+15:41:58.593 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+15:41:58.594 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+15:41:58.594 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 Extensão: Reativar Treinador Suspenso                  ?
+15:41:58.595 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+15:41:58.595 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+15:41:58.663 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+15:41:58.663 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Reativar treinador
+15:41:58.695 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+15:41:58.697 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+15:41:58.708 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+15:41:58.708 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 REATIVAÇÃO COMPLETO
+15:41:58.723 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+15:41:58.724 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+15:41:58.724 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+15:41:58.754 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+15:41:58.756 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+15:41:58.757 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 ALTERNATIVO: Treinador Inativo - Bloquear Booking      ?
+15:41:58.758 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+15:41:58.758 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Criar e suspender treinador
+15:41:58.775 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador suspenso
+15:41:58.776 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Validar status
+15:41:58.783 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+15:41:58.783 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: INACTIVE
+15:41:58.784 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? UC-2 ALTERNATIVO: Booking bloqueado para treinador inativo
+15:41:58.784 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 ALTERNATIVO COMPLETO
+15:41:58.796 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+?????????????????????????????????????????????????????????????????
+15:41:58.796 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?  SETUP - UC-2 Suporte: Validação de Treinador               ?
+15:41:58.796 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ?????????????????????????????????????????????????????????????????
+15:41:58.802 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? Base de dados trainers_db limpa
+15:41:58.803 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+???????????????????????????????????????????????????????????????
+15:41:58.803 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ? UC-2 SUPORTE: Registar Treinador - Validação para Booking   ?
+15:41:58.804 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - ???????????????????????????????????????????????????????????????
+15:41:58.827 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ARRANGE: Preparar dados de treinador
+15:41:58.828 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Nome: João Silva
+15:41:58.829 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Email: joao.trainer@gym.pt
+15:41:58.830 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   • Especialidade: STRENGTH
+15:41:58.831 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? ACT: Criar treinador
+15:41:58.838 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Treinador criado com ID: 1161a695-ce7a-4748-be18-8696f55fb71c
+15:41:58.839 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+??  ASSERT: Validações
+15:41:58.843 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? ID gerado: 1161a695-ce7a-4748-be18-8696f55fb71c
+15:41:58.843 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Nome: João Silva
+15:41:58.844 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Especialidade: STRENGTH
+15:41:58.844 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Status: ACTIVE
+15:41:58.846 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest -   ? Persistido em trainers_db
+15:41:58.847 [INFO ] o.e.t.i.TrainersUseCaseIntegrationTest - 
+? UC-2 SUPORTE COMPLETO: Treinador registado e disponível
+15:41:59.136 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.147 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.153 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.158 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.164 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.172 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.184 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.198 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.206 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.212 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.218 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.228 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:41:59.238 [INFO ] o.e.t.s.TrainersServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:42:00.090 [INFO ] o.e.t.TrainersApplicationTests - Starting TrainersApplicationTests using Java 17.0.13 with PID 3808 (started by Utilizador in C:\DEV\gymhub\trainers)
+15:42:00.090 [DEBUG] o.e.t.TrainersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:42:00.091 [INFO ] o.e.t.TrainersApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15:42:01.548 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+15:42:01.551 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+15:42:01.552 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+15:42:01.554 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:42:01.807 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:42:02.453 [INFO ] o.e.t.TrainersApplicationTests - Started TrainersApplicationTests in 3.147 seconds (process running for 28.894)
+15:42:02.467 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+15:42:02.468 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+15:42:02.481 [INFO ] o.e.t.TrainersApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:42:02.590 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:42:02.593 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:42:02.611 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+15:42:02.627 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

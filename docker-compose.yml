@@ -1,0 +1,300 @@
+services:
+
+  # Service discovery server
+  eureka-server:
+    image: gymhub/eureka-server:latest
+    build:
+      context: .
+      dockerfile: eureka-server/dockerfile
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8761/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  # API Gateway (single entry point)
+  api-gateway:
+    image: gymhub/api-gateway:latest
+    build:
+      context: .
+      dockerfile: api-gateway/dockerfile
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+
+  # RabbitMQ broker for async events
+  rabbitmq:
+    image: rabbitmq:3.12-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  # Members database
+  members_db:
+    image: postgres:16-alpine
+    container_name: members_db
+    environment:
+      POSTGRES_DB: members_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d members_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Trainers database
+  trainers_db:
+    image: postgres:16-alpine
+    container_name: trainers_db
+    environment:
+      POSTGRES_DB: trainers_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d trainers_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Schedule database
+  schedule_db:
+    image: postgres:16-alpine
+    container_name: schedule_db
+    environment:
+      POSTGRES_DB: schedule_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d schedule_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Workout database
+  workout_db:
+    image: postgres:16-alpine
+    container_name: workout_db
+    environment:
+      POSTGRES_DB: workout_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5435:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d workout_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Report database
+  report_db:
+    image: postgres:16-alpine
+    container_name: report_db
+    environment:
+      POSTGRES_DB: report_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5436:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d report_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Notifications database
+  notifications_db:
+    image: postgres:16-alpine
+    container_name: notifications_db
+    environment:
+      POSTGRES_DB: notifications_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5437:5432"
+    networks:
+      - gymhub_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d notifications_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  # Members microservice
+  members-service:
+    image: gymhub/members:latest
+    build:
+      context: .
+      dockerfile: members/dockerfile
+    container_name: members-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      members_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8081:8081"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+  # Trainers microservice
+  trainers-service:
+    image: gymhub/trainers:latest
+    build:
+      context: .
+      dockerfile: trainers/dockerfile
+    container_name: trainers-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      trainers_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8082:8082"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+  # Schedule microservice
+  schedule-service:
+    image: gymhub/schedule:latest
+    build:
+      context: .
+      dockerfile: schedule/dockerfile
+    container_name: schedule-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      schedule_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8083:8083"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+  # Workout microservice
+  workout-service:
+    image: gymhub/workout:latest
+    build:
+      context: .
+      dockerfile: workout/dockerfile
+    container_name: workout-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      workout_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8091:8091"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+  # Report microservice
+  report-service:
+    image: gymhub/report:latest
+    build:
+      context: .
+      dockerfile: report/dockerfile
+    container_name: report-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      report_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8092:8092"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+  # Notifications microservice
+  notifications-service:
+    image: gymhub/notifications:latest
+    build:
+      context: .
+      dockerfile: notifications/dockerfile
+    container_name: notifications-service
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      notifications_db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "8093:8093"
+    networks:
+      - gymhub_network
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+
+networks:
+  gymhub_network:
+    driver: bridge

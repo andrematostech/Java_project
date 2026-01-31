@@ -1,0 +1,304 @@
+22:58:23.232 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 3616 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:58:23.239 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:58:23.241 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:58:29.976 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:58:30.414 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:58:30.418 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:58:30.496 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:58:35.149 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:58:37.493 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 15.439 seconds (process running for 17.812)
+22:58:37.608 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:58:37.608 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:58:38.147 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.556 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.588 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.602 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.611 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.630 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.646 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.677 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:38.740 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:39.452 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 3616 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:58:39.453 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:58:39.453 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:58:40.575 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:58:40.577 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+22:58:40.577 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:58:40.578 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:58:40.778 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:58:41.262 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 2.478 seconds (process running for 21.59)
+22:58:41.278 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:58:41.278 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:58:41.287 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:41.851 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 3616 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:58:41.851 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:58:41.851 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+22:58:43.251 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+22:58:43.258 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+22:58:43.258 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+22:58:43.266 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:58:43.630 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:58:44.110 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 2.783 seconds (process running for 24.43)
+22:58:44.118 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:58:44.118 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:58:44.223 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.234 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.247 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.257 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.269 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.280 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.297 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.311 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.325 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.342 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:58:44.425 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:58:44.425 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:58:44.435 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:58:44.437 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+22:58:44.452 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+22:58:44.454 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+22:59:38.433 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 2324 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:59:38.464 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:59:38.466 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:59:45.026 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:59:45.439 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:59:45.443 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:59:45.499 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:59:49.159 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:59:50.822 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 13.614 seconds (process running for 16.172)
+22:59:50.986 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:59:50.986 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:59:51.496 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:51.834 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:51.866 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:51.882 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:51.896 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:52.857 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 2324 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:59:52.857 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:59:52.857 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:59:53.982 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:59:53.982 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+22:59:53.982 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:59:53.982 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:59:54.274 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:59:54.872 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 2.908 seconds (process running for 20.222)
+22:59:54.876 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:59:54.876 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:59:54.876 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:55.459 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 2324 (started by Utilizador in C:\DEV\gymhub\schedule)
+22:59:55.460 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:59:55.460 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+22:59:56.746 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+22:59:56.746 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+22:59:56.746 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+22:59:56.746 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:59:56.865 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:59:57.156 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 2.217 seconds (process running for 22.507)
+22:59:57.161 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:59:57.162 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:59:57.239 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:57.248 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:57.268 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:57.285 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:59:57.332 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:59:57.334 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:59:57.340 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:59:57.340 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+22:59:57.344 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+22:59:57.344 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+23:01:49.884 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 23704 (started by Utilizador in C:\DEV\gymhub\schedule)
+23:01:49.890 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+23:01:49.891 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+23:01:56.559 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:01:56.956 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+23:01:56.960 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:01:57.011 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+23:02:01.098 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:02:03.055 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 14.145 seconds (process running for 16.267)
+23:02:03.136 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+23:02:03.136 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+23:02:04.286 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:04.334 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:04.379 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:04.428 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:05.379 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 23704 (started by Utilizador in C:\DEV\gymhub\schedule)
+23:02:05.380 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+23:02:05.380 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+23:02:06.531 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+23:02:06.532 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+23:02:06.533 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+23:02:06.534 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+23:02:06.902 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:02:07.457 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 2.871 seconds (process running for 20.67)
+23:02:07.465 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+23:02:07.465 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+23:02:07.474 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:08.259 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 23704 (started by Utilizador in C:\DEV\gymhub\schedule)
+23:02:08.259 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+23:02:08.260 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+23:02:09.597 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+23:02:09.599 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+23:02:09.599 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+23:02:09.600 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+23:02:09.759 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:02:10.136 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 2.615 seconds (process running for 23.348)
+23:02:10.142 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+23:02:10.142 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+23:02:10.227 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:10.243 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:10.259 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:10.277 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:10.292 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+23:02:10.357 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:02:10.361 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:02:10.367 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+23:02:10.368 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+23:02:10.373 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+23:02:10.375 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+21:36:27.978 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 5036 (started by Utilizador in C:\DEV\gymhub\schedule)
+21:36:27.986 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:36:27.988 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+21:36:37.584 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:36:38.899 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+21:36:38.928 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:36:39.532 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21:36:47.753 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:36:51.750 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 25.937 seconds (process running for 28.924)
+21:36:51.881 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+21:36:51.881 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+21:36:52.998 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:53.062 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:53.103 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:53.133 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:55.092 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 5036 (started by Utilizador in C:\DEV\gymhub\schedule)
+21:36:55.092 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:36:55.092 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+21:36:56.831 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+21:36:56.832 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+21:36:56.833 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+21:36:56.834 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21:36:57.251 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:36:57.785 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 4.59 seconds (process running for 34.959)
+21:36:57.792 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+21:36:57.793 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+21:36:57.801 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:36:59.442 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 5036 (started by Utilizador in C:\DEV\gymhub\schedule)
+21:36:59.442 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:36:59.443 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+21:37:02.745 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+21:37:02.748 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+21:37:02.749 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+21:37:02.749 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21:37:03.022 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21:37:03.559 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 5.709 seconds (process running for 40.733)
+21:37:03.566 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+21:37:03.566 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+21:37:03.763 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:37:03.787 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:37:03.813 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:37:03.832 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:37:03.858 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+21:37:03.995 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:37:03.999 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:37:04.014 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+21:37:04.019 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+21:37:04.027 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+21:37:04.028 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+22:08:40.658 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 272 (started by Utilizador in c:\DEV\gymhub\schedule)
+22:08:40.674 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:08:40.676 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+22:08:46.803 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:08:47.380 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:08:47.385 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:08:47.432 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:08:51.929 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:08:53.735 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 15.257 seconds (process running for 17.497)
+22:08:53.823 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:08:53.823 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:08:54.697 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:08:54.743 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:08:54.778 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:08:54.799 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:08:56.762 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 272 (started by Utilizador in c:\DEV\gymhub\schedule)
+22:08:56.763 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:08:56.764 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22:08:57.686 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+22:08:57.687 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+22:08:57.688 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+22:08:57.688 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:08:57.910 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:08:58.415 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 3.552 seconds (process running for 22.177)
+22:08:58.426 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:08:58.427 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:08:58.439 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:00.146 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 272 (started by Utilizador in c:\DEV\gymhub\schedule)
+22:09:00.147 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:09:00.147 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+22:09:01.746 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+22:09:01.748 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+22:09:01.748 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+22:09:01.749 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+22:09:01.896 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22:09:02.385 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 3.886 seconds (process running for 26.147)
+22:09:02.394 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+22:09:02.394 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+22:09:02.625 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:02.651 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:02.667 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:02.679 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:02.696 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+22:09:02.776 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:09:02.778 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:09:02.796 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+22:09:02.799 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+22:09:02.811 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+22:09:02.813 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+15:46:07.321 [INFO ] o.e.s.c.ScheduleControllerTest - Starting ScheduleControllerTest using Java 17.0.13 with PID 17356 (started by Utilizador in C:\DEV\gymhub\schedule)
+15:46:07.332 [DEBUG] o.e.s.c.ScheduleControllerTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:46:07.334 [INFO ] o.e.s.c.ScheduleControllerTest - No active profile set, falling back to 1 default profile: "default"
+15:46:16.352 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:46:16.887 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+15:46:16.892 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:46:16.967 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:46:22.563 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:46:25.093 [INFO ] o.e.s.c.ScheduleControllerTest - Started ScheduleControllerTest in 19.273 seconds (process running for 23.185)
+15:46:25.215 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+15:46:25.216 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+15:46:26.612 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:26.666 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:26.713 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:26.739 [INFO ] o.e.s.c.ScheduleControllerTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:28.310 [INFO ] o.e.s.ScheduleApplicationTests - Starting ScheduleApplicationTests using Java 17.0.13 with PID 17356 (started by Utilizador in C:\DEV\gymhub\schedule)
+15:46:28.310 [DEBUG] o.e.s.ScheduleApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:46:28.311 [INFO ] o.e.s.ScheduleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15:46:30.307 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Starting...
+15:46:30.310 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+15:46:30.311 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Start completed.
+15:46:30.312 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:46:30.597 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:46:31.105 [INFO ] o.e.s.ScheduleApplicationTests - Started ScheduleApplicationTests in 4.299 seconds (process running for 29.198)
+15:46:31.112 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+15:46:31.112 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+15:46:31.120 [INFO ] o.e.s.ScheduleApplicationTests - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:31.892 [INFO ] o.e.s.s.SessionServiceTest - Starting SessionServiceTest using Java 17.0.13 with PID 17356 (started by Utilizador in C:\DEV\gymhub\schedule)
+15:46:31.895 [DEBUG] o.e.s.s.SessionServiceTest - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:46:31.896 [INFO ] o.e.s.s.SessionServiceTest - No active profile set, falling back to 1 default profile: "default"
+15:46:33.891 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Starting...
+15:46:33.892 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+15:46:33.893 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Start completed.
+15:46:33.894 [WARN ] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:46:34.073 [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:46:34.623 [INFO ] o.e.s.s.SessionServiceTest - Started SessionServiceTest in 3.448 seconds (process running for 32.715)
+15:46:34.636 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+15:46:34.637 [WARN ] o.s.c.e.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+15:46:34.785 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:34.810 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:34.829 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:34.855 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:34.875 [INFO ] o.e.s.s.SessionServiceTest - ? ? TESTE PASSOU COM SUCESSO ? ? ?
+15:46:34.960 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:46:34.967 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:46:34.979 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+15:46:34.983 [INFO ] c.z.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+15:46:34.987 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+15:46:34.988 [INFO ] c.z.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.

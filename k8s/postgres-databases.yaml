@@ -1,0 +1,323 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: members-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: members-db
+  template:
+    metadata:
+      labels:
+        app: members-db
+    spec:
+      containers:
+        - name: members-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: members_db
+          volumeMounts:
+            - name: members-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: members-db-storage
+          persistentVolumeClaim:
+            claimName: members-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: members-db
+  namespace: gymhub
+spec:
+  selector:
+    app: members-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trainers-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trainers-db
+  template:
+    metadata:
+      labels:
+        app: trainers-db
+    spec:
+      containers:
+        - name: trainers-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: trainers_db
+          volumeMounts:
+            - name: trainers-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: trainers-db-storage
+          persistentVolumeClaim:
+            claimName: trainers-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trainers-db
+  namespace: gymhub
+spec:
+  selector:
+    app: trainers-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: schedule-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: schedule-db
+  template:
+    metadata:
+      labels:
+        app: schedule-db
+    spec:
+      containers:
+        - name: schedule-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: schedule_db
+          volumeMounts:
+            - name: schedule-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: schedule-db-storage
+          persistentVolumeClaim:
+            claimName: schedule-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: schedule-db
+  namespace: gymhub
+spec:
+  selector:
+    app: schedule-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workout-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workout-db
+  template:
+    metadata:
+      labels:
+        app: workout-db
+    spec:
+      containers:
+        - name: workout-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: workout_db
+          volumeMounts:
+            - name: workout-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: workout-db-storage
+          persistentVolumeClaim:
+            claimName: workout-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: workout-db
+  namespace: gymhub
+spec:
+  selector:
+    app: workout-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: report-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: report-db
+  template:
+    metadata:
+      labels:
+        app: report-db
+    spec:
+      containers:
+        - name: report-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: report_db
+          volumeMounts:
+            - name: report-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: report-db-storage
+          persistentVolumeClaim:
+            claimName: report-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: report-db
+  namespace: gymhub
+spec:
+  selector:
+    app: report-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notifications-db
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notifications-db
+  template:
+    metadata:
+      labels:
+        app: notifications-db
+    spec:
+      containers:
+        - name: notifications-db
+          image: postgres:15
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: notifications_db
+          volumeMounts:
+            - name: notifications-db-storage
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: notifications-db-storage
+          persistentVolumeClaim:
+            claimName: notifications-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: notifications-db
+  namespace: gymhub
+spec:
+  selector:
+    app: notifications-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432

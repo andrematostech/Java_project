@@ -1,0 +1,107 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: members
+  namespace: gymhub
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: members
+  template:
+    metadata:
+      labels:
+        app: members
+    spec:
+      containers:
+        - name: members
+          image: gymhub/members:latest
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: k8s
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://members-db:5432/members_db
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: SPRING_RABBITMQ_HOST
+              value: rabbitmq
+            - name: SPRING_RABBITMQ_PORT
+              value: "5672"
+            - name: SPRING_RABBITMQ_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-secret
+                  key: RABBITMQ_USER
+            - name: SPRING_RABBITMQ_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-secret
+                  key: RABBITMQ_PASSWORD
+            - name: MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_HEALTH_READINESSSTATE_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_HEALTH_LIVENESSSTATE_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
+              value: health,info
+          imagePullPolicy: IfNotPresent
+          args:
+            - "--spring.profiles.active=k8s"
+          ports:
+            - containerPort: 8081
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8081
+            initialDelaySeconds: 60
+            timeoutSeconds: 5
+            periodSeconds: 20
+            failureThreshold: 6
+
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8081
+            initialDelaySeconds: 30
+            timeoutSeconds: 5
+            periodSeconds: 10
+            failureThreshold: 12
+
+          startupProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8081
+            failureThreshold: 60
+            periodSeconds: 10
+            timeoutSeconds: 30
+
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 100m
+              memory: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: members
+  namespace: gymhub
+spec:
+  selector:
+    app: members
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+  type: ClusterIP

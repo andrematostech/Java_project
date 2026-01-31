@@ -1,0 +1,12 @@
+### Create notification (manual test)
+POST http://localhost:8092/notifications
+Content-Type: application/json
+
+{
+  "recipientId": "member-1",
+  "type": "WORKOUT_PLAN_CREATED",
+  "message": "Test notification from REST (no RabbitMQ)."
+}
+
+### List notifications for member-1
+GET http://localhost:8092/notifications?recipientId=member-1

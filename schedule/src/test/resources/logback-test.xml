@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Console com cores e mensagens claras -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%highlight(%-5level) [%thread] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Arquivo para guardar histórico -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>test-results/logs/test-run.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%-5level] %logger{30} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Teste específico - DEBUG para seus testes -->
+    <logger name="org.estg.schedule" level="DEBUG"/>
+    
+    <!-- Spring é silencioso -->
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="org.hibernate" level="WARN"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

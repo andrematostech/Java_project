@@ -1,0 +1,49 @@
+# =========================================================
+# Eureka Server - consolidated configuration (single file)
+# Profiles supported: docker, k8s
+# =========================================================
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    # Single-node Eureka server
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  server:
+    enable-self-preservation: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+---
+# =========================
+# docker profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+---
+# =========================
+# k8s profile
+# =========================
+spring:
+  config:
+    activate:
+      on-profile: k8s

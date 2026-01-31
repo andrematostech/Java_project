@@ -1,0 +1,1828 @@
+21:16:09.775 [INFO ] o.estg.MembersApplicationTests - Starting MembersApplicationTests using Java 17.0.13 with PID 23388 (started by Utilizador in C:\DEV\gymhub\members)
+21:16:09.779 [DEBUG] o.estg.MembersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:16:09.781 [INFO ] o.estg.MembersApplicationTests - The following 1 profile is active: "test"
+21:16:13.895 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:16:14.228 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:members_test_db user=SA
+21:16:14.233 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:16:21.677 [INFO ] o.estg.MembersApplicationTests - Started MembersApplicationTests in 13.9 seconds (process running for 16.228)
+21:16:21.698 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:16:21.701 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:17:57.985 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:57.991 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:57.991 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:57.994 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.004 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+21:17:58.005 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.005 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+21:17:58.044 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+21:17:58.045 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+21:17:58.054 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+21:17:58.054 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:17:58.068 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+21:17:58.069 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:17:58.077 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:17:58.078 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:17:58.078 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.108 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.108 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.108 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.108 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.109 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+21:17:58.109 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.109 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:17:58.109 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+21:17:58.110 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+21:17:58.110 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+21:17:58.110 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:17:58.110 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:17:58.111 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:17:58.111 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:17:58.112 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:17:58.112 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:17:58.112 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:17:58.112 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.120 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.120 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.120 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.121 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.121 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+21:17:58.121 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.121 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:17:58.123 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+21:17:58.123 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:17:58.123 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:17:58.124 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:17:58.125 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+21:17:58.125 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+21:17:58.125 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:17:58.125 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+21:17:58.125 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.133 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.133 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.133 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.133 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.134 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+21:17:58.134 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.134 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+21:17:58.135 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+21:17:58.135 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+21:17:58.138 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+21:17:58.139 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+21:17:58.139 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:17:58.140 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:17:58.140 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.148 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.148 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.148 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.149 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.149 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+21:17:58.150 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.150 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:17:58.152 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+21:17:58.152 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+21:17:58.152 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:17:58.153 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:17:58.154 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:17:58.154 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:17:58.154 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:17:58.154 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:17:58.155 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:17:58.155 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:17:58.155 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+21:17:58.156 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:17:58.156 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:17:58.156 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.165 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.165 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.166 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.166 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.166 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+21:17:58.166 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.166 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+21:17:58.168 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+21:17:58.168 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+21:17:58.169 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+21:17:58.170 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:17:58.171 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:17:58.171 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:17:58.172 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:17:58.172 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:17:58.180 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.180 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:17:58.180 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:17:58.180 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:17:58.181 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+21:17:58.181 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:17:58.181 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+21:17:58.181 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+21:17:58.182 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+21:17:58.182 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:17:58.183 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:17:58.184 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:20:58.702 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.708 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:20:58.708 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.708 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:20:58.713 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenActivatingMember
+21:20:58.714 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:20:58.714 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:20:58.769 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.activateMember() ? retorna Member ativado
+21:20:58.769 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.activateMember()
+21:20:58.862 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:20:58.862 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:20:58.871 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+21:20:58.874 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:20:58.874 [INFO ] o.e.c.MembersControllerTest -   ? Status do Member: ACTIVE
+21:20:58.875 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:20:58.901 [INFO ] o.e.c.MembersControllerTest -   ? membersService.activateMember() foi chamado exatamente 1 vez
+21:20:58.902 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:20:58.962 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.963 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:20:58.963 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.963 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:20:58.963 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn201WhenRegisteringMember
+21:20:58.963 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:20:58.964 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.registerMember() ? retorna Member com ID
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.registerMember()
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 201 (CREATED)
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Member ID: member-001
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Nome: Jose Soares
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? Status: ACTIVE
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest -   ? membersService.registerMember() foi chamado exatamente 1 vez
+21:20:58.968 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenUpdatingMember
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.updateMember() ? retorna Member atualizado
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.updateMember()
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? Nome atualizado: Andre Matos
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest -   ? membersService.updateMember() foi chamado exatamente 1 vez
+21:20:58.978 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:16.143 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.152 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:35:16.152 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.153 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:35:16.157 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenActivatingMember
+21:35:16.157 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:35:16.157 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:35:16.233 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.activateMember() ? retorna Member ativado
+21:35:16.233 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.activateMember()
+21:35:16.298 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:35:16.298 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:35:16.317 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+21:35:16.324 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:35:16.324 [INFO ] o.e.c.MembersControllerTest -   ? Status do Member: ACTIVE
+21:35:16.324 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:35:16.355 [INFO ] o.e.c.MembersControllerTest -   ? membersService.activateMember() foi chamado exatamente 1 vez
+21:35:16.356 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:16.458 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.458 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:35:16.459 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.459 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:35:16.460 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn201WhenRegisteringMember
+21:35:16.460 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:35:16.460 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:35:16.472 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.registerMember() ? retorna Member com ID
+21:35:16.474 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.registerMember()
+21:35:16.476 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:35:16.477 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:35:16.478 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 201 (CREATED)
+21:35:16.480 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:35:16.481 [INFO ] o.e.c.MembersControllerTest -   ? Member ID: member-001
+21:35:16.482 [INFO ] o.e.c.MembersControllerTest -   ? Nome: Jose Soares
+21:35:16.482 [INFO ] o.e.c.MembersControllerTest -   ? Status: ACTIVE
+21:35:16.482 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:35:16.556 [INFO ] o.e.c.MembersControllerTest -   ? membersService.registerMember() foi chamado exatamente 1 vez
+21:35:16.556 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:16.586 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.586 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+21:35:16.587 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+21:35:16.588 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+21:35:16.589 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenUpdatingMember
+21:35:16.589 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+21:35:16.589 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+21:35:16.591 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.updateMember() ? retorna Member atualizado
+21:35:16.736 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.updateMember()
+21:35:16.741 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+21:35:16.742 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+21:35:16.743 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+21:35:16.744 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+21:35:16.746 [INFO ] o.e.c.MembersControllerTest -   ? Nome atualizado: Andre Matos
+21:35:16.750 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+21:35:16.759 [INFO ] o.e.c.MembersControllerTest -   ? membersService.updateMember() foi chamado exatamente 1 vez
+21:35:16.761 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:20.510 [INFO ] o.estg.MembersApplicationTests - Starting MembersApplicationTests using Java 17.0.13 with PID 17360 (started by Utilizador in C:\DEV\gymhub\members)
+21:35:20.512 [DEBUG] o.estg.MembersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+21:35:20.512 [INFO ] o.estg.MembersApplicationTests - The following 1 profile is active: "test"
+21:35:25.360 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:35:25.705 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:members_test_db user=SA
+21:35:25.710 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:35:35.979 [INFO ] o.estg.MembersApplicationTests - Started MembersApplicationTests in 17.645 seconds (process running for 23.479)
+21:35:36.652 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.653 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.654 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.654 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.655 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+21:35:36.655 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.655 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+21:35:36.661 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+21:35:36.661 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+21:35:36.663 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+21:35:36.663 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:35:36.663 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+21:35:36.663 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:35:36.664 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:35:36.665 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:35:36.665 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.671 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.671 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.672 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.673 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.674 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+21:35:36.674 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.675 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:35:36.676 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+21:35:36.677 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+21:35:36.677 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+21:35:36.678 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:35:36.678 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:35:36.679 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:35:36.683 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:35:36.687 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:35:36.688 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:35:36.691 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:35:36.691 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.730 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.731 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.732 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.733 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.734 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+21:35:36.735 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.737 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:35:36.744 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+21:35:36.745 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:35:36.746 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:35:36.747 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:35:36.748 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+21:35:36.748 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+21:35:36.749 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:35:36.749 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+21:35:36.749 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.760 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.760 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.760 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.761 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.761 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+21:35:36.762 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.762 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+21:35:36.763 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+21:35:36.763 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+21:35:36.765 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+21:35:36.766 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+21:35:36.767 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:35:36.767 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:35:36.767 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.783 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.784 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.787 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.789 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.789 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+21:35:36.790 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.790 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:35:36.791 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+21:35:36.792 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+21:35:36.792 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:35:36.793 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:35:36.797 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:35:36.797 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:35:36.797 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:35:36.798 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:35:36.798 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:35:36.798 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:35:36.798 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+21:35:36.799 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:35:36.799 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:35:36.799 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.815 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.815 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.815 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.815 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.816 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+21:35:36.817 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.818 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+21:35:36.828 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+21:35:36.829 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+21:35:36.830 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+21:35:36.830 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:35:36.830 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:35:36.831 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:35:36.831 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:35:36.832 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:36.856 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.856 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:35:36.856 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:35:36.856 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:35:36.857 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+21:35:36.857 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:35:36.857 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+21:35:36.857 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+21:35:36.858 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+21:35:36.859 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+21:35:36.859 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+21:35:36.859 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:35:36.860 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+21:35:36.860 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:35:36.860 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:35:36.860 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:35:36.860 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:35:37.110 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:35:37.117 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:15:12.913 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:12.920 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:12.921 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:12.923 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:12.930 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+21:15:12.930 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:12.930 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+21:15:13.013 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+21:15:13.014 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+21:15:13.025 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+21:15:13.026 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:15:13.036 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+21:15:13.037 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.049 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:15:13.050 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.050 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.094 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.095 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.095 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.095 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.096 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+21:15:13.096 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.096 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:15:13.097 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+21:15:13.097 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+21:15:13.097 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+21:15:13.098 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:15:13.098 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:15:13.100 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:15:13.100 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:15:13.100 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:15:13.100 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.101 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:15:13.101 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.109 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.110 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.110 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.110 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.110 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldFilterMembersByTrainingGoalSuccessfully
+21:15:13.111 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.111 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando Members com objetivo de treino
+21:15:13.121 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findAll() ? retorna página filtrada (simulated)
+21:15:13.121 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByTrainingGoal()
+21:15:13.147 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.147 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.148 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.148 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.149 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+21:15:13.150 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.150 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:15:13.152 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+21:15:13.152 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:15:13.152 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:15:13.153 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:15:13.153 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+21:15:13.153 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+21:15:13.154 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.154 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+21:15:13.154 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.165 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.166 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.166 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.166 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.167 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberSessionsSuccessfully
+21:15:13.167 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.167 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando histórico de sessões
+21:15:13.169 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByMemberId() ? retorna lista vazia de sessões
+21:15:13.169 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberSessions()
+21:15:13.181 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.181 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.182 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.182 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.182 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+21:15:13.182 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.182 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+21:15:13.183 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+21:15:13.183 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+21:15:13.185 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+21:15:13.186 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+21:15:13.186 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.187 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:15:13.187 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.195 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.195 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.195 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.196 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.196 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldListMembersWithPaginationSuccessfully
+21:15:13.196 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.196 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando página de Members
+21:15:13.197 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findAll() ? retorna página com 2 members
+21:15:13.197 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByPage()
+21:15:13.204 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.205 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:15:13.206 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+21:15:13.206 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+21:15:13.206 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:15:13.207 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:15:13.207 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:15:13.208 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+21:15:13.209 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:15:13.209 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.209 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.217 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.217 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.217 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.217 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.218 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+21:15:13.218 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.218 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+21:15:13.219 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+21:15:13.220 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+21:15:13.221 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+21:15:13.221 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.221 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:15:13.222 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:15:13.222 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.223 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.230 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.230 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.230 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.231 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.231 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+21:15:13.231 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.231 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+21:15:13.231 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+21:15:13.232 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+21:15:13.233 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+21:15:13.233 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+21:15:13.233 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:15:13.233 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+21:15:13.233 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.234 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:15:13.234 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.234 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:15:13.240 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.240 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:15:13.241 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:15:13.241 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:15:13.241 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldEncerrarMemberSuccessfully
+21:15:13.241 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:15:13.241 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo para encerramento
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para encerrar member
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.deactivateMember()
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest -   ? Member encerrado com sucesso
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest -   ? Status atualizado para: INACTIVE
+21:15:13.243 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:15:13.244 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:15:13.245 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:15:13.245 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.286 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.293 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.294 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.298 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.308 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+21:23:08.308 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.309 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+21:23:08.393 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+21:23:08.394 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+21:23:08.408 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+21:23:08.410 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.420 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+21:23:08.420 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.440 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:08.442 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.442 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.494 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.495 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.495 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.495 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.496 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+21:23:08.497 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.497 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:08.498 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+21:23:08.498 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+21:23:08.499 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+21:23:08.500 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:23:08.500 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.501 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:23:08.501 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:23:08.501 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:23:08.501 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.502 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:08.502 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.511 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.511 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.511 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.512 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.512 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldFilterMembersByTrainingGoalSuccessfully
+21:23:08.512 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.512 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando Members com objetivo de treino
+21:23:08.519 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByTrainingGoal() ? retorna página filtrada
+21:23:08.519 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByTrainingGoal()
+21:23:08.520 [INFO ] o.e.service.MembersServiceTest -   ? Página filtrada retornada
+21:23:08.521 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.521 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+21:23:08.521 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos filtrados: 2
+21:23:08.521 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+21:23:08.521 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.522 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByTrainingGoal() foi chamado exatamente 1 vez
+21:23:08.522 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.529 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.530 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:08.532 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+21:23:08.533 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:23:08.533 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:23:08.534 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:23:08.534 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+21:23:08.534 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+21:23:08.535 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.535 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+21:23:08.535 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.544 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.544 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.544 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.545 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.545 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberSessionsSuccessfully
+21:23:08.545 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.545 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando histórico de sessões
+21:23:08.546 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByMemberId() ? retorna lista vazia de sessões
+21:23:08.547 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberSessions()
+21:23:08.567 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.567 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.567 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.568 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.568 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+21:23:08.568 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.568 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+21:23:08.568 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+21:23:08.569 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+21:23:08.570 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+21:23:08.571 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+21:23:08.571 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.572 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:08.572 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.579 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.579 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.580 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.580 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.580 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldListMembersWithPaginationSuccessfully
+21:23:08.580 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.580 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando página de Members
+21:23:08.581 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByStatus() ? retorna página com 2 members
+21:23:08.581 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByPage()
+21:23:08.582 [INFO ] o.e.service.MembersServiceTest -   ? Página de members retornada
+21:23:08.582 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.582 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+21:23:08.583 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos: 2
+21:23:08.583 [INFO ] o.e.service.MembersServiceTest -   ? Total de páginas: 1
+21:23:08.583 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+21:23:08.583 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.584 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByStatus() foi chamado exatamente 1 vez
+21:23:08.584 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.590 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.590 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.590 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.590 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.590 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+21:23:08.591 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.591 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:08.592 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+21:23:08.592 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+21:23:08.592 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:23:08.592 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:23:08.594 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:23:08.594 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+21:23:08.595 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:08.596 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.596 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.602 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.603 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.603 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.603 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.603 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+21:23:08.604 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.604 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+21:23:08.605 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+21:23:08.605 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+21:23:08.606 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+21:23:08.606 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.606 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:08.607 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:08.607 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.607 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.614 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.614 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.614 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.614 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.615 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+21:23:08.615 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.615 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+21:23:08.615 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+21:23:08.616 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+21:23:08.616 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+21:23:08.617 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+21:23:08.617 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.617 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+21:23:08.617 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.618 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:08.618 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.618 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:08.623 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.623 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:08.623 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:08.623 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:08.623 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldEncerrarMemberSuccessfully
+21:23:08.624 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:08.624 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo para encerramento
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para encerrar member
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.deactivateMember()
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest -   ? Member encerrado com sucesso
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest -   ? Status atualizado para: INACTIVE
+21:23:08.625 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:08.626 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:08.626 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:08.626 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.099 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.106 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.106 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.108 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.117 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+21:23:45.118 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.118 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+21:23:45.160 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+21:23:45.160 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+21:23:45.170 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+21:23:45.170 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.177 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+21:23:45.178 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.190 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:45.191 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.192 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.236 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.236 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.236 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.236 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.237 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+21:23:45.237 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.237 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:45.238 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+21:23:45.238 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+21:23:45.238 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+21:23:45.238 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:23:45.238 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.240 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:23:45.240 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:23:45.240 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:23:45.240 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.241 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:45.241 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.250 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.250 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.250 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.251 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.251 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldFilterMembersByTrainingGoalSuccessfully
+21:23:45.251 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.251 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando Members com objetivo de treino
+21:23:45.277 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByTrainingGoal() ? retorna página filtrada
+21:23:45.278 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByTrainingGoal()
+21:23:45.281 [INFO ] o.e.service.MembersServiceTest -   ? Página filtrada retornada
+21:23:45.282 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.282 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+21:23:45.283 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos filtrados: 2
+21:23:45.283 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+21:23:45.283 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.284 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByTrainingGoal() foi chamado exatamente 1 vez
+21:23:45.284 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.308 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.308 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.308 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.309 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.309 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+21:23:45.309 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.309 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:45.310 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+21:23:45.311 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:23:45.311 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:23:45.312 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:23:45.312 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+21:23:45.313 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+21:23:45.314 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.315 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+21:23:45.315 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.323 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.323 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.323 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.324 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.324 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberSessionsSuccessfully
+21:23:45.324 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.324 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando histórico de sessões
+21:23:45.325 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByMemberIdOrderBySessionDateTimeDesc() ? retorna lista vazia de sessões
+21:23:45.326 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberSessions()
+21:23:45.327 [INFO ] o.e.service.MembersServiceTest -   ? Histórico de sessões retornado
+21:23:45.327 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.327 [INFO ] o.e.service.MembersServiceTest -   ? Lista NOT NULL
+21:23:45.327 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho da lista (vazia inicialmente): 0
+21:23:45.327 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.328 [INFO ] o.e.service.MembersServiceTest -   ? repository.existsById() foi chamado exatamente 1 vez
+21:23:45.328 [INFO ] o.e.service.MembersServiceTest -   ? sessionRecordRepository.findByMemberId() foi chamado exatamente 1 vez
+21:23:45.328 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.336 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.336 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.336 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.337 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.337 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+21:23:45.337 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.337 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+21:23:45.338 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+21:23:45.338 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+21:23:45.340 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+21:23:45.341 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+21:23:45.342 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.342 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:45.342 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.350 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.350 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.350 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.350 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.350 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldListMembersWithPaginationSuccessfully
+21:23:45.351 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.351 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando página de Members
+21:23:45.352 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByStatus() ? retorna página com 2 members
+21:23:45.352 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByPage()
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest -   ? Página de members retornada
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos: 2
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest -   ? Total de páginas: 1
+21:23:45.354 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+21:23:45.355 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.355 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByStatus() foi chamado exatamente 1 vez
+21:23:45.355 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.363 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.363 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.363 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.364 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.364 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+21:23:45.364 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.364 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+21:23:45.365 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+21:23:45.365 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+21:23:45.365 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+21:23:45.365 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+21:23:45.366 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+21:23:45.366 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+21:23:45.366 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.366 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.367 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.373 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.373 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.373 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.374 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.374 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+21:23:45.374 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.374 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+21:23:45.376 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+21:23:45.376 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+21:23:45.378 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+21:23:45.378 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.379 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+21:23:45.380 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:45.382 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.382 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.401 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.402 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.402 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.403 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.403 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+21:23:45.403 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.404 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+21:23:45.404 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+21:23:45.405 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+21:23:45.406 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+21:23:45.408 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+21:23:45.408 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.409 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+21:23:45.409 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.410 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:45.410 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.411 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+21:23:45.423 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.423 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+21:23:45.424 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+21:23:45.424 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+21:23:45.424 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldEncerrarMemberSuccessfully
+21:23:45.424 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+21:23:45.424 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo para encerramento
+21:23:45.426 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para encerrar member
+21:23:45.427 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.deactivateMember()
+21:23:45.428 [INFO ] o.e.service.MembersServiceTest -   ? Member encerrado com sucesso
+21:23:45.429 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+21:23:45.430 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL
+21:23:45.430 [INFO ] o.e.service.MembersServiceTest -   ? Status atualizado para: INACTIVE
+21:23:45.431 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+21:23:45.432 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+21:23:45.433 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+21:23:45.434 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:21.384 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.399 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+22:06:21.400 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.403 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+22:06:21.414 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenActivatingMember
+22:06:21.415 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+22:06:21.415 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+22:06:21.523 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.activateMember() ? retorna Member ativado
+22:06:21.524 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.activateMember()
+22:06:21.556 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+22:06:21.556 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+22:06:21.565 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+22:06:21.570 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+22:06:21.571 [INFO ] o.e.c.MembersControllerTest -   ? Status do Member: ACTIVE
+22:06:21.571 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+22:06:21.587 [INFO ] o.e.c.MembersControllerTest -   ? membersService.activateMember() foi chamado exatamente 1 vez
+22:06:21.587 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:21.635 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.635 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+22:06:21.635 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.636 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+22:06:21.636 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn201WhenRegisteringMember
+22:06:21.636 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+22:06:21.637 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+22:06:21.646 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.registerMember() ? retorna Member com ID
+22:06:21.647 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.registerMember()
+22:06:21.647 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+22:06:21.647 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 201 (CREATED)
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest -   ? Member ID: member-001
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest -   ? Nome: Jose Soares
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest -   ? Status: ACTIVE
+22:06:21.648 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+22:06:21.649 [INFO ] o.e.c.MembersControllerTest -   ? membersService.registerMember() foi chamado exatamente 1 vez
+22:06:21.649 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:21.659 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.659 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+22:06:21.660 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+22:06:21.660 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+22:06:21.660 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenUpdatingMember
+22:06:21.660 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+22:06:21.661 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+22:06:21.661 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.updateMember() ? retorna Member atualizado
+22:06:21.662 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.updateMember()
+22:06:21.662 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+22:06:21.662 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+22:06:21.663 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+22:06:21.663 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+22:06:21.663 [INFO ] o.e.c.MembersControllerTest -   ? Nome atualizado: Andre Matos
+22:06:21.663 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+22:06:21.664 [INFO ] o.e.c.MembersControllerTest -   ? membersService.updateMember() foi chamado exatamente 1 vez
+22:06:21.664 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:24.906 [INFO ] o.estg.MembersApplicationTests - Starting MembersApplicationTests using Java 17.0.13 with PID 9468 (started by Utilizador in c:\DEV\gymhub\members)
+22:06:24.909 [DEBUG] o.estg.MembersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+22:06:24.910 [INFO ] o.estg.MembersApplicationTests - The following 1 profile is active: "test"
+22:06:28.919 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:06:29.353 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:members_test_db user=SA
+22:06:29.356 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:06:37.543 [INFO ] o.estg.MembersApplicationTests - Started MembersApplicationTests in 14.791 seconds (process running for 19.348)
+22:06:38.103 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.104 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.104 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.104 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.105 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+22:06:38.106 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.106 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+22:06:38.114 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+22:06:38.114 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+22:06:38.116 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+22:06:38.116 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.116 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+22:06:38.117 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.117 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+22:06:38.118 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.118 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.125 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.125 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.125 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.126 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.126 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+22:06:38.126 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.126 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+22:06:38.127 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+22:06:38.127 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+22:06:38.127 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+22:06:38.127 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+22:06:38.127 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.128 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+22:06:38.128 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+22:06:38.128 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+22:06:38.128 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.128 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+22:06:38.129 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.136 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.154 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.154 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.154 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.155 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldFilterMembersByTrainingGoalSuccessfully
+22:06:38.155 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.155 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando Members com objetivo de treino
+22:06:38.161 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByTrainingGoal() ? retorna página filtrada
+22:06:38.161 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByTrainingGoal()
+22:06:38.163 [INFO ] o.e.service.MembersServiceTest -   ? Página filtrada retornada
+22:06:38.163 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.164 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+22:06:38.164 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos filtrados: 2
+22:06:38.164 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+22:06:38.165 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.166 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByTrainingGoal() foi chamado exatamente 1 vez
+22:06:38.166 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.182 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.183 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.183 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.183 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.183 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+22:06:38.184 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.184 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+22:06:38.185 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+22:06:38.185 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+22:06:38.185 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+22:06:38.186 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+22:06:38.186 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+22:06:38.186 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+22:06:38.187 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.187 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+22:06:38.187 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.193 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.193 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.194 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.194 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.194 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberSessionsSuccessfully
+22:06:38.194 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.194 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando histórico de sessões
+22:06:38.195 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByMemberIdOrderBySessionDateTimeDesc() ? retorna lista vazia de sessões
+22:06:38.195 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberSessions()
+22:06:38.196 [INFO ] o.e.service.MembersServiceTest -   ? Histórico de sessões retornado
+22:06:38.197 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.197 [INFO ] o.e.service.MembersServiceTest -   ? Lista NOT NULL
+22:06:38.197 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho da lista (vazia inicialmente): 0
+22:06:38.197 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.198 [INFO ] o.e.service.MembersServiceTest -   ? repository.existsById() foi chamado exatamente 1 vez
+22:06:38.198 [INFO ] o.e.service.MembersServiceTest -   ? sessionRecordRepository.findByMemberId() foi chamado exatamente 1 vez
+22:06:38.198 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.205 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.205 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.205 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.206 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.206 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+22:06:38.206 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.207 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+22:06:38.207 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+22:06:38.208 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+22:06:38.210 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+22:06:38.211 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+22:06:38.211 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.212 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+22:06:38.212 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.219 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.219 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.220 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.220 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.220 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldListMembersWithPaginationSuccessfully
+22:06:38.220 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.220 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando página de Members
+22:06:38.221 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByStatus() ? retorna página com 2 members
+22:06:38.221 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByPage()
+22:06:38.222 [INFO ] o.e.service.MembersServiceTest -   ? Página de members retornada
+22:06:38.223 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.223 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+22:06:38.223 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos: 2
+22:06:38.223 [INFO ] o.e.service.MembersServiceTest -   ? Total de páginas: 1
+22:06:38.224 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+22:06:38.224 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.224 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByStatus() foi chamado exatamente 1 vez
+22:06:38.225 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.230 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.230 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.230 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.230 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.231 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+22:06:38.231 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.231 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+22:06:38.232 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+22:06:38.233 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+22:06:38.233 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+22:06:38.233 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+22:06:38.233 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+22:06:38.234 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+22:06:38.235 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.235 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.240 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.240 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.241 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.241 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.241 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+22:06:38.242 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.242 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+22:06:38.243 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+22:06:38.244 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+22:06:38.244 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+22:06:38.244 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.245 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+22:06:38.245 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+22:06:38.245 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.246 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.249 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.250 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.250 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.250 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.250 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+22:06:38.250 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.251 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+22:06:38.251 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+22:06:38.251 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+22:06:38.252 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+22:06:38.252 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+22:06:38.252 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.252 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+22:06:38.252 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.253 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+22:06:38.253 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.253 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.258 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.259 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+22:06:38.259 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+22:06:38.259 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+22:06:38.259 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldEncerrarMemberSuccessfully
+22:06:38.260 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+22:06:38.260 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo para encerramento
+22:06:38.260 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para encerrar member
+22:06:38.260 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.deactivateMember()
+22:06:38.261 [INFO ] o.e.service.MembersServiceTest -   ? Member encerrado com sucesso
+22:06:38.261 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+22:06:38.261 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL
+22:06:38.261 [INFO ] o.e.service.MembersServiceTest -   ? Status atualizado para: INACTIVE
+22:06:38.261 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+22:06:38.262 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+22:06:38.262 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+22:06:38.263 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+22:06:38.329 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:06:38.332 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:38:19.240 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.278 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+15:38:19.278 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.280 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+15:38:19.300 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenActivatingMember
+15:38:19.300 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+15:38:19.301 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+15:38:19.632 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.activateMember() ? retorna Member ativado
+15:38:19.633 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.activateMember()
+15:38:19.737 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+15:38:19.739 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+15:38:19.751 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+15:38:19.757 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+15:38:19.757 [INFO ] o.e.c.MembersControllerTest -   ? Status do Member: ACTIVE
+15:38:19.758 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+15:38:19.779 [INFO ] o.e.c.MembersControllerTest -   ? membersService.activateMember() foi chamado exatamente 1 vez
+15:38:19.780 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:19.880 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.881 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+15:38:19.881 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.881 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+15:38:19.883 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn201WhenRegisteringMember
+15:38:19.883 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+15:38:19.883 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+15:38:19.892 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.registerMember() ? retorna Member com ID
+15:38:19.893 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.registerMember()
+15:38:19.894 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+15:38:19.895 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+15:38:19.895 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 201 (CREATED)
+15:38:19.895 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+15:38:19.895 [INFO ] o.e.c.MembersControllerTest -   ? Member ID: member-001
+15:38:19.895 [INFO ] o.e.c.MembersControllerTest -   ? Nome: Jose Soares
+15:38:19.896 [INFO ] o.e.c.MembersControllerTest -   ? Status: ACTIVE
+15:38:19.896 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+15:38:19.898 [INFO ] o.e.c.MembersControllerTest -   ? membersService.registerMember() foi chamado exatamente 1 vez
+15:38:19.898 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:19.921 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.922 [INFO ] o.e.c.MembersControllerTest - ? Iniciando Setup do Teste Controller
+15:38:19.922 [INFO ] o.e.c.MembersControllerTest - ???????????????????????????????????????
+15:38:19.924 [INFO ] o.e.c.MembersControllerTest - ? DTOs criados para testes
+15:38:19.926 [INFO ] o.e.c.MembersControllerTest - 
+? TEST: shouldReturn200WhenUpdatingMember
+15:38:19.927 [INFO ] o.e.c.MembersControllerTest - ????????????????????????????????????????
+15:38:19.927 [INFO ] o.e.c.MembersControllerTest - ? ARRANGE - Configurando Mock do Service
+15:38:19.930 [INFO ] o.e.c.MembersControllerTest -   ? Mock membersService.updateMember() ? retorna Member atualizado
+15:38:19.931 [INFO ] o.e.c.MembersControllerTest - 
+? ACT - Executando controller.updateMember()
+15:38:19.932 [INFO ] o.e.c.MembersControllerTest -   ? Controller executado
+15:38:19.932 [INFO ] o.e.c.MembersControllerTest - 
+??  ASSERT - Verificando resposta HTTP
+15:38:19.933 [INFO ] o.e.c.MembersControllerTest -   ? Status HTTP: 200 (OK)
+15:38:19.934 [INFO ] o.e.c.MembersControllerTest -   ? Body NOT NULL
+15:38:19.934 [INFO ] o.e.c.MembersControllerTest -   ? Nome atualizado: Andre Matos
+15:38:19.934 [INFO ] o.e.c.MembersControllerTest - 
+? VERIFY - Verificando chamada ao Service
+15:38:19.937 [INFO ] o.e.c.MembersControllerTest -   ? membersService.updateMember() foi chamado exatamente 1 vez
+15:38:19.938 [INFO ] o.e.c.MembersControllerTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:23.559 [INFO ] o.estg.MembersApplicationTests - Starting MembersApplicationTests using Java 17.0.13 with PID 2780 (started by Utilizador in C:\DEV\gymhub\members)
+15:38:23.560 [DEBUG] o.estg.MembersApplicationTests - Running with Spring Boot v3.4.12, Spring v6.2.14
+15:38:23.561 [INFO ] o.estg.MembersApplicationTests - The following 1 profile is active: "test"
+15:38:29.132 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:38:29.612 [INFO ] c.z.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:members_test_db user=SA
+15:38:29.617 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:38:39.183 [INFO ] o.estg.MembersApplicationTests - Started MembersApplicationTests in 17.178 seconds (process running for 24.777)
+15:38:40.040 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.040 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.041 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.041 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.041 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldActivateMemberSuccessfully
+15:38:40.042 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.042 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member suspenso
+15:38:40.049 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para ativar member
+15:38:40.049 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.activateMember()
+15:38:40.052 [INFO ] o.e.service.MembersServiceTest -   ? Member ativado
+15:38:40.052 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.053 [INFO ] o.e.service.MembersServiceTest -   ? Status correto: ACTIVE
+15:38:40.053 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.053 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+15:38:40.054 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.054 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.065 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.066 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.067 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.068 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.068 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberByIdSuccessfully
+15:38:40.068 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.069 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+15:38:40.069 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('member-001') ? retorna Optional com Member
+15:38:40.069 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberById()
+15:38:40.070 [DEBUG] o.estg.service.MembersService - Fetching member from DB: member-001
+15:38:40.070 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+15:38:40.070 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.070 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+15:38:40.070 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+15:38:40.071 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+15:38:40.071 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.072 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+15:38:40.072 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.092 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.093 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.093 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.093 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.094 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldFilterMembersByTrainingGoalSuccessfully
+15:38:40.094 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.094 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando Members com objetivo de treino
+15:38:40.109 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByTrainingGoal() ? retorna página filtrada
+15:38:40.110 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByTrainingGoal()
+15:38:40.128 [INFO ] o.e.service.MembersServiceTest -   ? Página filtrada retornada
+15:38:40.128 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.129 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+15:38:40.129 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos filtrados: 2
+15:38:40.130 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+15:38:40.130 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.131 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByTrainingGoal() foi chamado exatamente 1 vez
+15:38:40.132 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.144 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.145 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.145 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.145 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.146 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldPublishEventWhenRegisteringMember
+15:38:40.146 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.146 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+15:38:40.147 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository e eventPublisher configurados
+15:38:40.148 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+15:38:40.148 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+15:38:40.149 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+15:38:40.149 [INFO ] o.e.service.MembersServiceTest -   ? Member registrado
+15:38:40.149 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT & VERIFY - Verificando publicação de evento
+15:38:40.150 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.150 [INFO ] o.e.service.MembersServiceTest -   ? Evento MemberRegisteredEvent publicado com sucesso
+15:38:40.150 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.164 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.165 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.165 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.166 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.166 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldGetMemberSessionsSuccessfully
+15:38:40.166 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.166 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando histórico de sessões
+15:38:40.167 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByMemberIdOrderBySessionDateTimeDesc() ? retorna lista vazia de sessões
+15:38:40.168 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMemberSessions()
+15:38:40.171 [INFO ] o.e.service.MembersServiceTest -   ? Histórico de sessões retornado
+15:38:40.172 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.176 [INFO ] o.e.service.MembersServiceTest -   ? Lista NOT NULL
+15:38:40.177 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho da lista (vazia inicialmente): 0
+15:38:40.181 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.182 [INFO ] o.e.service.MembersServiceTest -   ? repository.existsById() foi chamado exatamente 1 vez
+15:38:40.186 [INFO ] o.e.service.MembersServiceTest -   ? sessionRecordRepository.findByMemberId() foi chamado exatamente 1 vez
+15:38:40.186 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.201 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.202 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.202 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.203 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.204 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldThrowExceptionWhenMemberNotFound
+15:38:40.205 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.205 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock para retornar vazio
+15:38:40.206 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findById('invalid-id') ? retorna Optional.empty()
+15:38:40.206 [INFO ] o.e.service.MembersServiceTest - 
+? ACT & ASSERT - Esperando MemberNotFoundException
+15:38:40.207 [DEBUG] o.estg.service.MembersService - Fetching member from DB: invalid-id
+15:38:40.208 [INFO ] o.e.service.MembersServiceTest -   ? Exceção lançada corretamente: (MembersService) - Member not found with id: invalid-id
+15:38:40.208 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.209 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+15:38:40.209 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.218 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.218 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.218 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.219 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.220 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldListMembersWithPaginationSuccessfully
+15:38:40.220 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.220 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando página de Members
+15:38:40.222 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.findByStatus() ? retorna página com 2 members
+15:38:40.223 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.getMembersByPage()
+15:38:40.224 [INFO ] o.e.service.MembersServiceTest -   ? Página de members retornada
+15:38:40.225 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.226 [INFO ] o.e.service.MembersServiceTest -   ? Page NOT NULL
+15:38:40.226 [INFO ] o.e.service.MembersServiceTest -   ? Total de elementos: 2
+15:38:40.226 [INFO ] o.e.service.MembersServiceTest -   ? Total de páginas: 1
+15:38:40.227 [INFO ] o.e.service.MembersServiceTest -   ? Tamanho do conteúdo: 2
+15:38:40.227 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.228 [INFO ] o.e.service.MembersServiceTest -   ? repository.findByStatus() foi chamado exatamente 1 vez
+15:38:40.228 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.239 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.239 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.240 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.240 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.241 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldRegisterMemberSuccessfully
+15:38:40.242 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.242 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Mock
+15:38:40.245 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member persistido
+15:38:40.245 [INFO ] o.e.service.MembersServiceTest -   ? Mock eventPublisher.publish() ? sem retorno
+15:38:40.246 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.registerMember()
+15:38:40.246 [INFO ] o.estg.service.MembersService - Registering new member: Jose Soares
+15:38:40.248 [DEBUG] o.estg.service.MembersService - Member registered with ID: member-001
+15:38:40.249 [INFO ] o.e.service.MembersServiceTest -   ? Service executado com sucesso
+15:38:40.249 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.250 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL: Jose Soares
+15:38:40.250 [INFO ] o.e.service.MembersServiceTest -   ? Nome correto: Jose Soares
+15:38:40.251 [INFO ] o.e.service.MembersServiceTest -   ? Telefone correto: 8240047
+15:38:40.252 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações com Mock
+15:38:40.254 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+15:38:40.255 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.256 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.265 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.265 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.265 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.265 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.266 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldSuspendMemberSuccessfully
+15:38:40.267 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.267 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo
+15:38:40.270 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para suspender member
+15:38:40.271 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.suspendMember()
+15:38:40.272 [INFO ] o.e.service.MembersServiceTest -   ? Member suspenso
+15:38:40.273 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.275 [INFO ] o.e.service.MembersServiceTest -   ? repository.findById() foi chamado exatamente 1 vez
+15:38:40.277 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+15:38:40.278 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.279 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.286 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.286 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.286 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.286 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.287 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldUpdateMemberSuccessfully
+15:38:40.287 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.287 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Criando DTO de atualização
+15:38:40.287 [INFO ] o.e.service.MembersServiceTest -   ? DTO criado: Andre Matos - 8240047
+15:38:40.290 [INFO ] o.e.service.MembersServiceTest -   ? Mock repository.save() ? retorna Member atualizado
+15:38:40.290 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.updateMember()
+15:38:40.291 [INFO ] o.e.service.MembersServiceTest -   ? Member atualizado com sucesso
+15:38:40.292 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.292 [INFO ] o.e.service.MembersServiceTest -   ? Nome atualizado: Andre Matos
+15:38:40.292 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.293 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+15:38:40.295 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.295 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.307 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.308 [INFO ] o.e.service.MembersServiceTest - ? Iniciando Setup do Teste
+15:38:40.309 [INFO ] o.e.service.MembersServiceTest - ???????????????????????????????????????
+15:38:40.309 [INFO ] o.e.service.MembersServiceTest - ? Mock Member criado: Jose Soares
+15:38:40.309 [INFO ] o.e.service.MembersServiceTest - 
+? TEST: shouldEncerrarMemberSuccessfully
+15:38:40.309 [INFO ] o.e.service.MembersServiceTest - ????????????????????????????????????????
+15:38:40.310 [INFO ] o.e.service.MembersServiceTest - ? ARRANGE - Configurando Member ativo para encerramento
+15:38:40.311 [INFO ] o.e.service.MembersServiceTest -   ? Mock configurado para encerrar member
+15:38:40.312 [INFO ] o.e.service.MembersServiceTest - 
+? ACT - Executando service.deactivateMember()
+15:38:40.315 [INFO ] o.e.service.MembersServiceTest -   ? Member encerrado com sucesso
+15:38:40.315 [INFO ] o.e.service.MembersServiceTest - 
+??  ASSERT - Verificando resultados
+15:38:40.316 [INFO ] o.e.service.MembersServiceTest -   ? Member NOT NULL
+15:38:40.316 [INFO ] o.e.service.MembersServiceTest -   ? Status atualizado para: INACTIVE
+15:38:40.317 [INFO ] o.e.service.MembersServiceTest - 
+? VERIFY - Verificando interações
+15:38:40.319 [INFO ] o.e.service.MembersServiceTest -   ? repository.save() foi chamado exatamente 1 vez
+15:38:40.321 [INFO ] o.e.service.MembersServiceTest -   ? eventPublisher.publish() foi chamado exatamente 1 vez
+15:38:40.322 [INFO ] o.e.service.MembersServiceTest - 
+? ? ? TESTE PASSOU COM SUCESSO ? ? ?
+
+15:38:40.423 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:38:40.426 [INFO ] c.z.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

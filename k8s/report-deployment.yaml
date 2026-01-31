@@ -1,0 +1,102 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: report
+  namespace: gymhub
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: report
+  template:
+    metadata:
+      labels:
+        app: report
+    spec:
+      containers:
+        - name: report
+          image: gymhub/report:latest
+          ports:
+            - containerPort: 8092
+          args:
+            - --spring.profiles.active=k8s
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8092
+            initialDelaySeconds: 60
+            periodSeconds: 20
+            timeoutSeconds: 5
+            failureThreshold: 6
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8092
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 12
+          startupProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8092
+            failureThreshold: 60
+            periodSeconds: 10
+            timeoutSeconds: 30
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: k8s
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:postgresql://report-db:5432/report_db
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: SPRING_RABBITMQ_HOST
+              value: rabbitmq
+            - name: SPRING_RABBITMQ_PORT
+              value: "5672"
+            - name: SPRING_RABBITMQ_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-secret
+                  key: RABBITMQ_USER
+            - name: SPRING_RABBITMQ_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-secret
+                  key: RABBITMQ_PASSWORD
+            - name: MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_HEALTH_READINESSSTATE_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_HEALTH_LIVENESSSTATE_ENABLED
+              value: 'true'
+            - name: MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
+              value: health,info
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: report
+  namespace: gymhub
+spec:
+  selector:
+    app: report
+  ports:
+    - protocol: TCP
+      port: 8092
+      targetPort: 8092

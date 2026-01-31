@@ -1,0 +1,14 @@
+### Update workout plan (change name + status)
+PUT http://localhost:8091/api/workout-plans/0bd73d7a-aa9f-4d26-bb58-bcc4135efe3b/update
+Content-Type: application/json
+
+{
+  "name": "Push Day (updated)",
+  "memberId": "123",
+  "trainerId": "456",
+  "startDate": "2025-01-01",
+  "endDate": "2025-02-01",
+  "goal": "Build strength",
+  "status": "PAUSED",
+  "exercisesJson": "[{\"exercise\":\"Bench Press\",\"sets\":4,\"reps\":8}]"
+}
